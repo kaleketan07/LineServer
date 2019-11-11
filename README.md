@@ -6,13 +6,13 @@ This application serves lines out of a given file to its network clients.
 
 The application exposes to endpoints:
 
-| Method  | Route | Response |  Comments  |
+| Method  | Route | Response Code |  Comments  |
 |---------|-------|----------|------------|
-|   GET   |  ` / `  | 200 OK ()| marks the home page of the application|
-|   GET   | `/lines/<line index>`| 200 OK if the index exists within the file, otherwise 413 if indexs beyond the file and 400 if index is 0|    
+|   GET   |  ` / `  | 200  | marks the home page of the application|
+|   GET   | `/lines/<line index>`| 200 or 413 or 400 | 200 - index found, 413 - index beyond the file, 400 - index is 0|    
 
 
-
+NOTE: the index passed as the URL parameter is 1 based i.e index 1 denotes the first line in the file.  
 
 ## System requirements
 - Python 3.x
