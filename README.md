@@ -1,5 +1,19 @@
 # Line Server
 
+This application serves lines out of a given file to its network clients.
+
+## REST API
+
+The application exposes to endpoints:
+
+| Method  | Route | Response |  Comments  |
+|---------|-------|----------|------------|
+|   GET   |  ` / `  | 200 OK ()| marks the home page of the application|
+|   GET   | `/lines/<line index>`| 200 OK if the index exists within the file, otherwise 413 if indexs beyond the file and 400 if index is 0|    
+
+
+
+
 ## System requirements
 - Python 3.x
 - Flask 1.0.2 
