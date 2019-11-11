@@ -1,4 +1,4 @@
-# Line Server Assignment
+# Line Server
 
 ## System requirements
 - Python 3.x
