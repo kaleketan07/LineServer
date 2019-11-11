@@ -13,7 +13,11 @@
 
 
 ## Instructions to run the code
-- make sure you have the files/ folder created in the same directory as the "app.py" file 
+- make sure you have the "files/" folder created in the same directory as the "app.py" file (if not create one):
+  ```
+    mkdir files
+  ```
+
 - create a file to be served if you don't already have using: 
     ```
     python createFile.py --lc <NUMBER_OF_LINES_IN_THE_FILE>
