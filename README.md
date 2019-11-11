@@ -9,10 +9,10 @@ The application exposes to endpoints:
 | Method  | Route | Response Code |  Comments  |
 |---------|-------|----------|------------|
 |   GET   |  ` / `  | 200  | marks the home page of the application|
-|   GET   | `/lines/<line index>`| 200 or 413 or 400 | 200 - index found, 413 - index beyond the file, 400 - index is 0|    
+|   GET   | `/lines/<line index>`| 200 or 413 or 400 | 200 - index found in file, 413 - index beyond the file, 400 - index is 0|    
 
 
-NOTE: the index passed as the URL parameter is 1 based i.e index 1 denotes the first line in the file.  
+NOTE: the `<line index>` passed as the URL parameter is 1 based i.e `line index` = 1 denotes the first line in the file.  
 
 ## System requirements
 - Python 3.x
